@@ -1,0 +1,26 @@
+block variables
+  -
+    var
+      siteTitle = "Дизайн-студия «Нёрдс»",
+
+      setTitle = function (pageTitle) {
+        return pageTitle ? pageTitle + " — " : ""
+      }
+    ;
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    title #{setTitle(pageTitle)+siteTitle}
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic")
+    link(rel="stylesheet" href="css/style.min.css")
+
+  body.page
+    header.page__header
+
+    main.page__main
+      p Test
+
+    footer.page__footer
+      p Test
